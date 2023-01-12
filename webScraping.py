@@ -10,8 +10,8 @@ soup=BeautifulSoup(response.text,'lxml')
 #     f.write(soup)
 
 
-buttons=soup.findAll('input')
+links=soup.findAll('a')
 #print(buttons)
-
-for button in buttons :
-    print(button)
+print(len(links))
+for link in links :
+    print(link)
